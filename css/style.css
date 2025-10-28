@@ -209,6 +209,10 @@ nav
   flex-wrap: wrap;
   gap: 10px;
 }
+.other ul{
+    position: relative !important;
+    left: inherit !important;
+}
 .other a
 {
   display: inline-block;
@@ -218,6 +222,9 @@ nav
   font-size: 11px;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.other .flex{
+    flex-wrap: wrap;
 }
 .other a :hover
 {
@@ -443,7 +450,7 @@ nav
       order: 3;
   }
   
-  ul {
+  nav ul {
       position: absolute;
       top: 70px;
       left: -100%;
@@ -463,12 +470,12 @@ nav
       left: 0;
   }
   
-  ul li {
+  nav ul li {
       width: 100%;
       text-align: center;
   }
   
-  ul li a {
+  nav ul li a {
       padding:10px 15px;
       border-bottom: 1px solid #eee;
       color: #000;
